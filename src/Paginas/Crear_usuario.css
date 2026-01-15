@@ -1,0 +1,74 @@
+.Contenedoru {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(4, 102, 109), rgb(34, 45, 145));
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr; 
+  place-items: center;
+}
+
+.Registro {
+  grid-row: 2 / span 2; 
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(13, 19, 75);
+  border-radius: 8px;
+  padding: 10px;
+  justify-content: space-evenly;
+  border:3px black double;
+}
+.Titulo {
+  grid-row: 1;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-style: italic;
+}
+.Boton_registrar {
+  background: linear-gradient(
+    
+    rgba(22,152,161,1),
+    rgba(13,19,75,1)
+  );
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 16px;
+  font-size: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: double;
+  border-color: rgb(3, 68, 105);
+}
+
+.Boton_registrar:hover {
+  transform: translateY(-2px);
+  
+}
+.Boton_registrar:active {
+  transform: scale(0.95); 
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+.entradas{
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+
+
+
+}
+.divcheck{
+  
+  
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  color: white  ;
+}

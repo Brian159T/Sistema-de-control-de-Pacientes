@@ -1,0 +1,21 @@
+.sidebar{
+    width: 200px;
+    height: 95vh;
+    background: #042146;
+    position: absolute;
+    padding:0 30px;
+    transition: all 0.5s;
+    left :-100%;
+}
+.logo{
+    width: 50px;
+    
+}
+.sidebar.active{
+    left:0;
+}
+header svg {
+    font-size:40px;
+
+
+}

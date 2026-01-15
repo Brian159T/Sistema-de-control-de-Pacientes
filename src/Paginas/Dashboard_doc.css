@@ -1,0 +1,41 @@
+.header{
+    padding: 30px;
+    background: #081e35;
+    height:40px;
+}
+
+.ul{
+    padding:0;
+
+
+
+}
+ul li{
+    list-style: none;
+    margin: 10px 0;
+    
+}
+ul li a{
+    color:#364c68;
+    text-decoration:none;
+    font-size:16px;
+    padding:10px 15px;
+    border-radius:6px;
+
+}
+u li a svg {
+    margin-right:10px;
+
+}
+ul li a:hover,ul li a.active{
+    background: #042146;
+}
+.main{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color:azure
+
+}
