@@ -13,7 +13,7 @@ const Dashboard: React.FC = () => {
   return (
     <div className="Appd">
       <header className="header">
-        <GiHamburgerMenu
+        <GiHamburgerMenu size={23}
           onClick={() => setShowNav(!showNav)}
           className="menu-icon"
         />
