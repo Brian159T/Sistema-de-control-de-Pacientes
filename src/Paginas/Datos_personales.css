@@ -1,0 +1,238 @@
+/* CONTENEDOR GENERAL */
+.Contenedor_datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    width: 100%;
+    height: 90%;
+    padding-right: 2px;
+}
+
+/* FORMULARIO */
+.contenedor1 {
+    background: linear-gradient(
+        rgb(42, 111, 168),
+        rgb(6, 9, 31)
+    );
+    width: 90%;
+    height: 50%;
+    border-radius: 15px;
+    border-style: double;
+    border-color: rgb(3, 83, 121);
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px; /* 🔹 ajusta este valor al gap que quieras */
+}
+
+/* GRID 4x3 */
+.formulario_datos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    font-size: 15px;
+}
+
+/* CADA CELDA */
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* LABEL */
+.letras {
+    font-style: italic;
+    font-size: 15px;
+}
+
+/* INPUT */
+.entradas {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 9px;
+    width: 70%;
+}
+
+/* BOTONES */
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    gap: 10px;
+    background-color: transparent;
+    width: 100%;
+    height: 30px;
+}
+.boton-base {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    border: double;
+    border-color: rgb(3, 68, 105);
+
+    transition: transform 0.2s ease;
+}
+
+.boton-base2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 11px;
+    border: double;
+    border-color: rgb(3, 68, 105);
+
+    transition: transform 0.2s ease;
+}
+.boton {
+    background: linear-gradient(
+        rgb(51, 218, 62),
+        rgb(18, 61, 32)
+    );
+}
+
+.boton-eliminar {
+    background: linear-gradient(
+        rgb(221, 55, 50),
+        rgb(54, 7, 5)
+    );
+}
+
+.boton-eliminar2 {
+    background: linear-gradient(
+        rgb(221, 55, 50),
+        rgb(54, 7, 5)
+    );
+}
+
+
+.boton-modificar {
+    background: linear-gradient(
+        rgb(230, 233, 50),
+        rgb(90, 92, 4)
+    );
+}
+
+.boton-base:hover {
+    transform: translateY(-2px);
+}
+
+.boton-base:active {
+    transform: scale(0.95);
+}
+
+
+.boton-base2:hover {
+    transform: translateY(-2px);
+}
+
+.boton-base2:active {
+    transform: scale(0.95);
+}
+/* TABLA */
+.contenedor2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(
+        rgb(41, 163, 133),
+        rgb(16, 68, 51)
+    );
+    width: 90%;
+    height: 45%;
+    border-radius: 15px;
+    border-style: double;
+    border-color: rgb(13, 102, 40);
+    gap: 10px;
+}
+.tabla-datos {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;             /* mantiene tu tamaño */
+    border-collapse: collapse;    /* une bordes de las celdas */
+}
+
+.tabla-datos thead th {
+    background-color: rgb(5, 1, 1) !important;
+}
+.tabla-datos th,
+.tabla-datos td {
+    border: 1px solid rgba(0, 0, 0, 0.6); /* líneas visibles */
+    padding: 8px;
+    text-align: center;
+}
+
+.tabla-datos thead {
+    background-color: rgba(0, 0, 0, 0.25); /* opcional, para diferenciar encabezado */
+}
+
+.tabla-datos tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* hover profesional */
+}
+.busqueda{
+    display: flex;
+    flex-direction: row;
+   
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    justify-content: space-between;
+    
+}
+
+.letras2 {
+    font-style: italic;
+    font-size: 20px;
+}
+
+/* INPUT */
+.entradas2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 9px;
+    width: 35%;
+}
+.boton-buscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    border: double;
+    border-color: rgb(3, 68, 105);
+    background: linear-gradient(
+        rgb(51, 109, 218),
+        rgb(12, 22, 54)
+    );
+
+    transition: transform 0.2s ease;
+}
+.boton-buscar:hover {
+    transform: translateY(-2px);
+}
+
+.boton-buscar:active {
+    transform: scale(0.95);
+}
+.tabla-datos thead th {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 1px;
+}

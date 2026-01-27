@@ -1,27 +1,79 @@
-.header{
-    padding: 30px;
-    background: transparent;
-    height:20px;
-    padding-left: 60px;
-    grid-column:2;
+/* ===============================
+   CONTENEDOR PRINCIPAL
+================================ */
+.Appd {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 60px 1fr;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, rgb(4, 102, 109), rgb(34, 45, 145));
 }
 
+/* ===============================
+   HEADER (BOTÓN)
+================================ */
+.headerb {
+    grid-column: 1 / 2; /* Solo columna 1 */
+    grid-row: 1;
+    height: 60px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    z-index: 5; /* 🔽 debajo del sidebar */
+}
 
-.main{
+.menu-icon {
+    cursor: pointer;
+    color: white;
+}
+
+/* ===============================
+   CONTENIDO PRINCIPAL
+================================ */
+.main {
     grid-column: 2;
-    height: 90vh;
+    grid-row: 2;
+    height: calc(100vh - 60px);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    color:azure
-
+    color: azure;
 }
-.Appd{
-    display:grid;
-    grid-template-columns: 220px 1fr;
 
+/* ===============================
+   OVERLAY (CIERRA SIDEBAR)
+================================ */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 6; /* debajo del sidebar */
+}
 
+/* ===============================
+   SIDEBAR / NAVBAR
+================================ */
+.navbar {
+    position: fixed;
+    top: 0; /* 🔥 empieza desde arriba */
+    left: 0;
+    width: 100px;
+    height: 100vh; /* 🔥 nunca se corta */
+    background: linear-gradient(
+        rgb(42, 111, 168),
+        rgb(6, 9, 31)
+    );
+    z-index: 10; /* 🔥 encima de todo */
 
+    /* Animación */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
 
+/* Sidebar visible */
+.navbar.show {
+    transform: translateX(0);
 }

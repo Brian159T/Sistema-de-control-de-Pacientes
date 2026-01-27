@@ -19,15 +19,15 @@ const Login = () => {
           Iniciar Sesión
         </label>
 
-        <input className="entradas" type="text" placeholder="Usuario" />
-        <input className="entradas" type="password" placeholder="Contraseña" />
+        <input className="entradasl" type="text" placeholder="Usuario" />
+        <input className="entradasl" type="password" placeholder="Contraseña" />
 
         <div className="divcheck">
           <input type="checkbox" />
           Mostrar Contraseña
         </div>
 
-        <button className="Boton_ingresar" onClick={() => navigate("/dashboard")}>Ingresar</button>
+        <button className="Boton_ingresar" onClick={() => navigate("/dashboard/datos")}>Ingresar</button>
         <button className="Boton_ingresar" onClick={() => navigate("/crear-usuario")}>Crear Usuario</button>
       </div>
 

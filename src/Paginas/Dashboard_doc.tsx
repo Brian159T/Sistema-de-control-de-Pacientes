@@ -2,31 +2,35 @@ import './Dashboard_doc.css';
 import Navbar from '../Components/Navbar';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
-
-import Home from './Home';
-import About from './About';
+import { Outlet } from 'react-router-dom';
 
 const Dashboard: React.FC = () => {
-  const [showNav, setShowNav] = useState<boolean>(false);
+  const [showNav, setShowNav] = useState(false);
 
   return (
     <div className="Appd">
-      <header className="header">
-        <GiHamburgerMenu size={23}
-          onClick={() => setShowNav(!showNav)}
+      <div className="headerb">
+        <GiHamburgerMenu
+          size={23}
+          onClick={() => setShowNav(prev => !prev)}
           className="menu-icon"
         />
-      </header>
-
-      <Navbar show={showNav} />
+      </div>
 
       <main className="main">
-        <Routes>
-          <Route path="" element={<Home />} />
-          <Route path="about" element={<About />} />
-        </Routes>
+        <Outlet />
       </main>
+
+      {/* NAVBAR */}
+      <Navbar show={showNav} />
+
+      {/* OVERLAY */}
+      {showNav && (
+        <div
+          className="overlay"
+          onClick={() => setShowNav(false)}
+        />
+      )}
     </div>
   );
 };

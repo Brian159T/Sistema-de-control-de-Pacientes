@@ -15,8 +15,8 @@ const Crear_usuarioc = () => {
           Crear usuario
         </label>
 
-        <input className='entradas' type="text" placeholder="Usuario" />
-        <input className='entradas' type="password" placeholder="Contraseña" />
+        <input className='entradasl' type="text" placeholder="Usuario" />
+        <input className='entradasl' type="password" placeholder="Contraseña" />
         <div className='divcheck'><input type="checkbox" /> Mostrar Contraseña</div>
         
         <button className='Boton_registrar'>Crear Usuario</button>
